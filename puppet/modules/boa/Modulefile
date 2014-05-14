@@ -1,0 +1,4 @@
+name 'Boa'
+version '0.0.1'
+dependency( 'puppetlabs/mysql', '0.9.0' )
+description ""

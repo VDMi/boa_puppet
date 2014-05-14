@@ -1,0 +1,5 @@
+class boa() {
+
+  class {'barracuda':}
+
+}

@@ -1,0 +1,74 @@
+# META INSTALLER
+
+  run als root
+    ^
+  dowload stuff
+    - boa
+    - barracuda
+    - octopus
+    - etc.
+  create rndpass
+
+# INSTALLER BOA
+
+boa
+  ^
+  check_root
+  check_date
+    ^
+    case in-stable || in-head
+    > init_setup
+        ^
+        init_start
+        > settings case local || public || stock
+        barracuda_install
+          settings 
+            ^ MY EMAIL
+              AUTO PILOT
+              EASY LOCALHOST
+              EASY PUBLIC
+              EASY HOSTNAME
+              USE STOCK
+            run BARRACUDA.sh
+        octopus_install
+        init_finish
+
+# BARRACUDA.sh
+
+BARRACUDA.sh.txt:3925
+
+Line 0-960 is variable defaults.
+
+root check
+  ^ 
+  service cron stop
+  AWS test by grep on fstab || VM test
+  = settings network (netw ip, netw human name, own ip, hostname, front, smtp)
+
+  check if update by verify hostmaster alias.
+
+  ^ status UPGRADE || INIT
+    = various settings
+
+    4061
+    ^ barracuda_cnf
+
+      check if /root/.barracuda.cnf exists **is your configuration**
+      can be predefined and created at this location.
+
+      prompt if not auto pilot.
+
+      run apt-get install
+
+    4080
+    ^ upgrade
+
+      
+
+
+
+
+
+
+
+
